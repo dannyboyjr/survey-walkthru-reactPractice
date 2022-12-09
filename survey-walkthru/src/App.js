@@ -1,13 +1,13 @@
 import React from 'react';
 import SurveyRoutes from './components/SurveyRoutes';
+import InventoryProvider from './context/InventoryProvider';
 
 function App() {
   return (
-    <div>
+    <InventoryProvider>
     <h1>a/A Forms</h1>
     <SurveyRoutes />
-
-    </div>
+    </InventoryProvider>
   
   );
 }
